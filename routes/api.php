@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// for basic CRUD api
+// for basic CRUD api a resource can be used
 // public routes, without authentication
 Route::resource('products', ProductController::class);
 
@@ -27,11 +27,11 @@ Route::resource('products', ProductController::class);
 //Route::delete('/products/{product}', [ProductController::class, 'destroy']);
 
 // protected route
-Route::group(['middleware' => ['auth:sanctum']], function (){
-    Route::get('/products/search/{name}', [ProductController::class, 'search']);
-});
+//Route::group(['middleware' => ['auth:sanctum']], function (){
+//    Route::get('/products/search/{name}', [ProductController::class, 'search']);
+//});
 // public route
-//Route::get('/products/search/{name}', [ProductController::class, 'search']);
+Route::get('/products/search/{name}', [ProductController::class, 'search']);
 
 
 Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {

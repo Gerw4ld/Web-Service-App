@@ -32,6 +32,43 @@ Next navigate to the breeze-next fronted folder with ```cd breeze-next/``` and s
 npm run dev
 ```
 
+Have a look around the authentication process. Create a user and go to your personal dashboard.
+
+Afterwards we will take a look at the CRUD API for our products. We will test the implementation in [Postman](https://www.postman.com/).
+
+### Guide to build the API yourself
+
+Create a database table for our Products. Make a migration file and a model:
+```
+php artisan make:model Product --migration
+```
+
+After specifying the table's properties in the migration file, run:
+```
+php artisan migrate
+```
+
+Afterwards extended the Model Product.php
+```
+protected $fillable = [
+'name',
+'slug',
+'desciption',
+'price'
+];
+```
+
+Now let's generate a Controller with basic CRUD method shells:
+```
+php artisan make:controller ProductController --api
+```
+
+To list all routes, type in:
+```
+php artisan route:list
+```
+
+
 ---
 ## General information
 
