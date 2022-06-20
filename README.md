@@ -48,7 +48,7 @@ After specifying the table's properties in the migration file, run:
 php artisan migrate
 ```
 
-Afterwards extended the Model Product.php
+Afterwards extend the Model Product.php
 ```
 protected $fillable = [
 'name',
