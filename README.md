@@ -27,6 +27,8 @@ Next navigate to the breeze-next fronted folder with ```cd breeze-next/``` and s
 
 ---
 ## General information
+
+---
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
