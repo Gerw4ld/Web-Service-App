@@ -1,4 +1,4 @@
-# Web Service Demo App  ![WebApp](/public/webapp.png)
+# ![WebApp](/public/webapp.png)eb Service Demo App
 
 We built a Single Page Application with Laravel (so we used **PHP** in the backend) and Next.js (so we used a JS / **React framework** in the frontend).
 
